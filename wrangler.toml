@@ -1,0 +1,19 @@
+name = "zhang1989"
+main = "src/index.js"
+compatibility_date = "2026-06-03"
+
+# 告诉 Cloudflare 这是一个普通的 Worker
+workers_dev = true
+
+# 声明代码中用到的环境变量（用户在部署页面或稍后可以修改）
+[vars]
+WEB_USER = "knight"
+WEB_PASS = "l00131425"
+PROXY_USER = "proxy"
+PROXY_PASS = "888888"
+
+# 声明 D1 数据库绑定
+[[d1_databases]]
+binding = "DB"
+database_name = "proxy_db"
+database_id = "0e4911ce-9b46-4351-85a2-3a68471c8e9a" # 留空，一键部署向导或后续配置会引导用户绑定他们自己的 D1 数据库
